@@ -1,0 +1,82 @@
+header{
+    background-color: #e7e7e7e7 !important;
+}
+.brand{
+    display: flex;
+    align-items: center;
+}
+
+.toolbar{
+    display: flex;
+    justify-content: space-between;
+}
+
+.title{
+    font-size: 2rem !important;
+    font-weight: 500 !important;
+    color: rgb(78, 94, 186);
+}
+.search{
+    display: flex;
+    align-items: center;
+    background-color: rgb(221, 221, 221);
+    padding: 0.3rem;
+    border-radius: 20px;
+    height: fit-content;
+    margin: 0 0.5rem;
+    width: inherit;
+}
+.search input{
+    border: none;
+    padding: 0.5rem;
+    background-color: transparent;
+    color: rgb(95, 95, 95);
+}
+.search input:focus {
+    outline: none;
+}
+.searchIcon{
+    color: rgb(114, 114, 114) !important;
+}
+.search input::placeholder{
+    color: rgb(78, 94, 186);
+}
+.avatar{
+ height: 34px !important;
+ width: 34px !important;
+}
+
+.joinUs{
+    text-transform: inherit !important;
+    margin: 0 0.5rem !important;
+    border-radius: 20px !important;
+    color: gray !important;
+    font-weight: 600 !important;
+}
+.chip{
+    height: 42px !important;
+    border-radius: 20px !important;
+    background-color: transparent !important;
+    border: #4e5eba !important;
+    border-width: 2px !important;
+    border-style: solid !important;
+}
+.chip:hover{
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.18) !important;
+}
+.chip span{
+    color: rgb(57 57 57 / 87%) !important;
+}
+
+@media only screen and (max-width: 646px){
+    .toolbar{
+        flex-direction: column;
+    }
+    .brand{
+        flex-direction: column;
+        width: 90%;
+    }
+    .menu{
+        margin: 0.5rem 0;
+    }
+}
