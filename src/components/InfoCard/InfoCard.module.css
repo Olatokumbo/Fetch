@@ -1,0 +1,22 @@
+.card{
+    width: fit-content !important;
+    border-radius: 10px !important;
+    max-width: 345px !important;
+    min-width: 254px !important;
+    /* margin: 0.5rem !important; */
+    height: fit-content !important;
+}
+.card:hover{
+    cursor: pointer;
+}
+.cardContent{
+    padding: 1rem !important;
+}
+.title{
+    font-weight: bold !important;
+}
+.subtitle{
+    color: gray !important;
+    font-weight: lighter !important;
+    font-size: 0.8rem !important;
+}

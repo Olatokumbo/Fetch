@@ -3,7 +3,7 @@
     font-size: 2rem !important;
     font-weight: 600 !important;
     color: rgb(255, 255, 255) !important;
-    width: 28rem;
+    width: auto;
 }
 .subtitle{
     font-size: 11px !important;
@@ -48,6 +48,17 @@
 
 .phone{
     height: 30rem;
+    width: auto;
+}
+
+.cardSection{
+    display: grid;
+    column-gap: 10px;
+    grid-auto-flow: column;
+    height: 20rem;
+    padding: 1rem;
+    overflow-x: auto;
+    overflow-y: hidden;
     width: auto;
 }
 

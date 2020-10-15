@@ -1,5 +1,6 @@
 import React from "react";
 import { Typography, Button } from "@material-ui/core";
+import {InfoCard} from "../../components";
 import Phone from "../../assets/phone.png";
 import style from "./Home.module.css";
 const Home = () => {
@@ -19,6 +20,12 @@ const Home = () => {
         <div className={style.headerRight}>
           <img src={Phone} className={style.phone} alt="" />
         </div>
+      </div>
+      <div className={style.cardSection}>
+      <InfoCard/>
+      <InfoCard/>
+      <InfoCard/>
+      <InfoCard/>
       </div>
     </div>
   );

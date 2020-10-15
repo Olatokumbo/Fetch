@@ -32,6 +32,7 @@ header{
     padding: 0.5rem;
     background-color: transparent;
     color: rgb(95, 95, 95);
+    /* width: inherit; */
 }
 .search input:focus {
     outline: none;
@@ -69,15 +70,19 @@ header{
     color: rgb(57 57 57 / 87%) !important;
 }
 
-@media only screen and (max-width: 646px){
+@media only screen and (max-width: 662px){
     .toolbar{
         flex-direction: column;
+        margin: 0.5rem 0;
     }
     .brand{
         flex-direction: column;
         width: 90%;
     }
     .menu{
-        margin: 0.5rem 0;
+        margin-top: 0.5rem;
+    }
+    .title{
+        display: none;
     }
 }
