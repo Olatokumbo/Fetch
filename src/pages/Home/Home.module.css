@@ -65,7 +65,6 @@
 .matter{
     padding: 2rem;
     display: flex;
-    height: 20rem;
 }
 .matterLeft, .matterRight{
     flex: 1;
