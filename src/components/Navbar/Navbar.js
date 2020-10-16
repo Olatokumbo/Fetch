@@ -10,11 +10,12 @@ import {
   MenuItem,
   Divider,
 } from "@material-ui/core";
-import { Link } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 import SearchIcon from "@material-ui/icons/Search";
 import avatar from "../../assets/davidO.jpg";
 import style from "./Navbar.module.css";
 const Navbar = () => {
+  const history = useHistory()
   const [anchorEl, setAnchorEl] = useState(null);
 
   const handleClick = (event) => {
@@ -56,8 +57,8 @@ const Navbar = () => {
             open={Boolean(anchorEl)}
             onClose={handleClose}
           >
-            <MenuItem>Sign in</MenuItem>
-            <MenuItem>Logout</MenuItem>
+            <MenuItem onClick={() => {history.push('/signin')}}>Sign in</MenuItem>
+            <MenuItem onClick={() => history.push('/signup')}>Sign up</MenuItem>
             <Divider />
             <MenuItem>Help</MenuItem>
           </Menu>

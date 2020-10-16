@@ -1,18 +1,18 @@
-.signin{
+.signup{
     height: 100%;
     display: flex;
 }
-.signinLeft{
+.signupLeft{
     flex: 1;
     /* background-color: #252a2a; */
-    background: url("../../assets/wallpaper.jpg");
+    background: url("../../assets/wallpaper1.jpg");
     background-position: center;
     background-size: cover;
 }
 
-.signinRight{
+.signupRight{
     flex: 2;
-    padding: 4rem 1rem;
+    padding: 3rem 1rem;
     display: flex;
     flex-direction: column;
 }
@@ -29,7 +29,7 @@
     font-weight: 700 !important;
     color: rgb(78, 94, 186);
 }
-.signinText{
+.signupText{
     font-weight: bold !important;
     font-size: 1.2rem !important;
 }
@@ -40,13 +40,21 @@
     border-radius: 8px !important;
     margin: 1rem 0 !important;
 }
-.signinRight form{
+.signupRight form{
     display: flex;
     flex-direction: column;
     /* padding: 1rem; */
 }
 
-.input{
+.name{
+    display: flex;
+}
+.input:first-child{
+    margin-top: 0.5rem !important;
+    margin-bottom: 0.5rem !important;
+    margin-right: 1rem !important;
+}
+.input:not(:first-child){
     margin: 0.5rem 0 !important;
 }
 .submit{
@@ -60,10 +68,10 @@
 
 
 @media only screen and (max-width: 736px){
-    .signinLeft{
+    .signupLeft{
         display: none;
     }
-    .signinRight{
+    .signupRight{
         padding: 2rem 1rem;
     }
 }
