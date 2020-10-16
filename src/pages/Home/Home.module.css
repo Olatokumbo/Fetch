@@ -55,13 +55,54 @@
     display: grid;
     column-gap: 10px;
     grid-auto-flow: column;
-    height: 20rem;
-    padding: 1rem;
+    padding: 1rem 0;
     overflow-x: auto;
     overflow-y: hidden;
     width: auto;
+    margin: 0 0.5rem;
 }
 
+.matter{
+    padding: 2rem;
+    display: flex;
+    height: 20rem;
+}
+.matterLeft, .matterRight{
+    flex: 1;
+    padding: 1rem;
+}
+.matterLeft p{
+    font-size: 1.5rem !important;
+    font-weight: bold !important;
+    color: rgb(44, 44, 44) !important;
+}
+
+.matterRight p{
+    color: gray !important;
+    font-weight: 100 !important;
+    width: 25rem !important;
+    font-size: larger !important;
+}
+
+.matterBtn{
+    text-transform: initial !important;
+    background-color: white !important;
+    width: fit-content;
+    color: rgb(37, 37, 37) !important;
+    border: 1px solid black !important;
+    margin: 1rem 0 !important;
+}
+.matterBtn:hover{
+    background-color: rgb(240, 240, 240) !important;
+}
+@media only screen and (max-width: 730px){
+    .matter{
+        flex-direction: column;
+    }
+    .matterRight p{
+        width: auto !important;
+    }
+}
 @media only screen and (max-width: 829px){
     .header{
         flex-direction: column;

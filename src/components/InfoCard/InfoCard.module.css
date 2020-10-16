@@ -5,6 +5,7 @@
     min-width: 254px !important;
     /* margin: 0.5rem !important; */
     height: fit-content !important;
+    justify-self: center;
 }
 .card:hover{
     cursor: pointer;
