@@ -1,0 +1,63 @@
+.signin{
+    height: 100%;
+    display: flex;
+}
+.signinLeft{
+    flex: 1;
+    /* background-color: #252a2a; */
+    background: url("../../assets/wallpaper.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.signinRight{
+    flex: 2;
+    padding: 8rem 1rem;
+    display: flex;
+    flex-direction: column;
+}
+.container{
+    width: 100%;
+    max-width: 416px;
+    margin: auto;
+}
+.title{
+    font-size: 2rem !important;
+    font-weight: 700 !important;
+    color: rgb(78, 94, 186);
+}
+.signinText{
+    font-weight: bold !important;
+    font-size: 2rem !important;
+}
+.googleBtn{
+    width: inherit !important;
+    color: white !important;
+    background-color: #4285f4 !important;
+    border-radius: 8px !important;
+    margin: 1rem 0 !important;
+}
+.signinRight form{
+    display: flex;
+    flex-direction: column;
+    /* padding: 1rem; */
+}
+
+.input{
+    margin: 0.5rem 0 !important;
+}
+.submit{
+    /* width: fit-content !important; */
+    margin: 0.5rem 0 !important;
+    border-radius: 8px !important;
+}
+
+
+@media only screen and (max-width: 736px){
+    .signinLeft{
+        display: none;
+    }
+    .signinRight{
+        padding: 2rem 1rem;
+    }
+}
