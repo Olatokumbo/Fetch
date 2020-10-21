@@ -3,6 +3,7 @@ import { Navbar, Footer } from "./components";
 import Home from "./pages/Home/Home";
 import Signin from "./pages/Signin/Signin";
 import Signup from "./pages/Signup/Signup";
+import Profile from "./pages/Profile/Profile";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import "./App.css";
 const App = () => {
@@ -14,6 +15,7 @@ const App = () => {
           <Route exact path="/" component={Home} />
           <Route path="/signin" component={Signin} />
           <Route path="/signup" component={Signup} />
+          <Route path="/profile" component={Profile} />
         </Switch>
       </Router>
       <Footer />

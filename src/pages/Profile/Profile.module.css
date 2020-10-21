@@ -1,0 +1,53 @@
+.profile{
+    height: 100vh;
+    display: flex;
+    padding: 1rem 0;
+    background-color: #fbfbfb;
+    justify-content: center;
+}
+
+.info{
+    display: flex;
+    justify-content: center;
+    height: fit-content;
+    padding: 1rem;
+    border-bottom: 1px solid #c6c6c6;
+}
+.infoRightLeft{
+    height: fit-content;
+}
+.infoRight{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+.mainInfo{
+    margin-left: 0.5rem;
+}
+.name{
+    font-size: 1.5rem !important;
+    color: #464646 !important;
+}
+.email{
+    color: #464646 !important;
+    font-size: medium !important;
+}
+.phone{
+    color: #464646 !important;
+    font-size: small !important;
+}
+
+.address{
+    font-size: small !important;
+    color: rgb(77, 77, 77) !important;
+}
+
+.avatar{
+    width: 10rem !important;
+    height: auto !important;
+    border-radius: 7px !important;
+}
+
+.settingsBtn{
+    height: fit-content !important;
+}
