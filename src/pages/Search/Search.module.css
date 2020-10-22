@@ -15,4 +15,46 @@
 
 .clearAll{
     height: inherit !important;
+    padding: 0.5rem !important;
+}
+
+.results{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    padding: 1rem 5rem;
+}
+
+@media only screen and (max-width: 1114px){
+    .results{
+        grid-template-columns: auto auto auto;
+    }
+}
+
+@media only screen and (max-width: 933px){
+    .results{
+        grid-template-columns: auto auto ;
+    }
+}
+
+@media only screen and (max-width: 650px){
+    .results{
+        grid-template-columns: auto;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .filters{
+        flex-direction: column;
+    }
+    .filter{
+        width: 100%;
+    }
+    .results{
+        padding: 0%;
+    }
+}
+
+.showMore{
+    margin: 1rem auto !important;
+    display: block !important;
 }

@@ -1,0 +1,36 @@
+.searchCard{
+    padding: 1rem;
+    border-radius: 9px;
+    justify-self: center;
+    background-color: #015ee9;
+    color: white;
+    width: 14rem;
+    height: 15rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 1rem;
+}
+
+.searchCard:hover{
+    transition: transform 0.5s ease;
+    transform: scale(1.04); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+    -webkit-box-shadow: -1px 22px 33px -22px rgba(148,148,148,1);
+    -moz-box-shadow: -1px 22px 33px -22px rgba(148,148,148,1);
+    box-shadow: -1px 22px 33px -22px rgba(148,148,148,1);
+}
+
+.header{
+   display: flex;
+   justify-content: space-between;
+}
+
+.hireBtn{
+    width: 100%;
+    background-color: white !important;
+    color: #015ee9 !important;
+}
+
+.info{
+    font-size: 0.9rem !important;
+}

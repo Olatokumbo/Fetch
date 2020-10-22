@@ -4,8 +4,8 @@ import {
   InputLabel,
   Select,
   Button,
-  Typography,
 } from "@material-ui/core";
+import SearchCard from "../../components/SearchCard/SearchCard";
 import style from "./Search.module.css";
 
 const Search = () => {
@@ -64,12 +64,21 @@ const Search = () => {
             <option value={30}>Thirty</option>
           </Select>
         </FormControl>
-        <Button size="small" className={style.clearAll}>
+        <Button size="small" variant="contained" color="primary" className={style.clearAll}>
           Clear All
         </Button>
       </div>
-      <Typography gutterBottom>Results</Typography>
-      <div className={style.results}></div>
+      <div className={style.results}>
+        <SearchCard />
+        <SearchCard />
+        <SearchCard />
+        <SearchCard />
+        <SearchCard />
+        <SearchCard />
+        <SearchCard />
+        <SearchCard />
+      </div>
+      <Button variant="outlined" color="primary" className={style.showMore} size="large">Show More</Button>
     </div>
   );
 };
