@@ -1,9 +1,11 @@
 .profile{
-    height: 100vh;
+    height: 100%;
     display: flex;
     padding: 1rem 0;
-    background-color: #fbfbfb;
-    justify-content: center;
+    /* background-color: #fbfbfb; */
+    background-color: #ffffff;
+    /* justify-content: center; */
+    flex-direction: column;
 }
 
 .info{
@@ -12,6 +14,9 @@
     height: fit-content;
     padding: 1rem;
     border-bottom: 1px solid #c6c6c6;
+    margin: 0 auto;
+    background-color: #fafafa;
+    border-radius: 10px;
 }
 .infoRightLeft{
     height: fit-content;
@@ -50,4 +55,48 @@
 
 .settingsBtn{
     height: fit-content !important;
+}
+.account{
+    display: flex;
+    margin: 1rem;
+    height: 100%;
+}
+
+.accountLeft{
+    flex: 1;
+    padding: 1rem;
+}
+.account ul{
+    list-style: none;
+    border-radius: 15px;
+    background-color: rgb(252, 252, 252);
+}
+.account li{
+    text-align: center;
+    padding: 0.7rem;
+}
+.account li:hover, .account li p:hover{
+    background-color: rgb(235, 235, 235);
+    border-radius: 10px;
+    color: orange !important;
+}
+
+li p{
+    color: rgb(77, 77, 77) !important;
+    font-size: 0.8rem !important;
+    font-weight: 600 !important;
+}
+.accountRight{
+    flex: 4;
+    padding: 1rem;
+    background-color: #f1f1f1;
+    border-radius: 10px;
+    height: 100%;
+}
+
+.showMore{
+    margin-top: 1rem !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    display: block !important;
 }
