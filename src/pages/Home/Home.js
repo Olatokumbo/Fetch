@@ -37,7 +37,7 @@ const Home = () => {
         </div>
         <div className={style.matterRight}>
           <Typography>
-            At a company, we do not condone any form of racial
+            At this company, we do not condone any form of racial
             discrimination. Additionally, we have also partnered with various
             humans rights organizations so could help tackle this issue that is
             plaguing the world

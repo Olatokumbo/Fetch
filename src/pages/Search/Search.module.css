@@ -1,0 +1,18 @@
+.filters{
+    height: 100%;
+    display: flex;
+    padding: 1rem 2rem;
+    /* background-color: #fbfbfb; */
+    background-color: #ffffff;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.filter{
+    flex: 1;
+    margin: 0.5rem !important;
+}
+
+.clearAll{
+    height: inherit !important;
+}
