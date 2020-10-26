@@ -5,6 +5,7 @@ import Signin from "./pages/Signin/Signin";
 import Signup from "./pages/Signup/Signup";
 import Profile from "./pages/Profile/Profile";
 import Search from "./pages/Search/Search";
+import Join from "./pages/Join/Join";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import "./App.css";
 const App = () => {
@@ -18,6 +19,7 @@ const App = () => {
           <Route path="/signup" component={Signup} />
           <Route path="/profile" component={Profile} />
           <Route path="/search" component={Search} />
+          <Route path="/join" component={Join} />
         </Switch>
       </Router>
       <Footer />

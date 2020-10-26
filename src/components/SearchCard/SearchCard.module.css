@@ -31,6 +31,10 @@
     color: #015ee9 !important;
 }
 
+.hireBtn:hover{
+    background-color: lavender !important;
+}
+
 .info{
     font-size: 0.9rem !important;
 }

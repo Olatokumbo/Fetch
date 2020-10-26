@@ -39,8 +39,7 @@ const Home = () => {
           <Typography>
             At this company, we do not condone any form of racial
             discrimination. Additionally, we have also partnered with various
-            humans rights organizations so could help tackle this issue that is
-            plaguing the world
+            humans rights organizations so could help tackle this issue on a more effective scale
           </Typography>
         </div>
       </div>

@@ -38,7 +38,7 @@ const Navbar = () => {
           </div>
         </div>
         <div className={style.menu}>
-          <Button className={style.joinUs}>Become a fetcher</Button>
+          <Button className={style.joinUs} onClick={()=>history.push("/join")}>Become a fetcher</Button>
           <Chip
             onClick={handleClick}
             className={style.chip}
