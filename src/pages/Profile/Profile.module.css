@@ -18,7 +18,10 @@
     background-color: #fafafa;
     border-radius: 10px;
 }
-.infoRightLeft{
+.infoLeft{
+    align-self: center;
+}
+.infoRight .infoLeft{
     height: fit-content;
 }
 .infoRight{
@@ -55,6 +58,8 @@
 
 .settingsBtn{
     height: fit-content !important;
+    width: fit-content !important;
+    order: 1 !important;
 }
 .account{
     display: flex;
@@ -99,4 +104,34 @@ li p{
     margin-left: auto !important;
     margin-right: auto !important;
     display: block !important;
+}
+
+@media only screen and (max-width: 630px){
+    .avatar{
+        width: 7rem !important;
+    }
+    .name{
+        font-size: 1.1rem !important;
+    }
+    .account{
+        flex-direction: column;
+    }
+    .email{
+        color: #464646 !important;
+        font-size: x-small !important;
+    }
+}
+
+
+@media only screen and (max-width: 533px){
+    .info{
+        flex-direction: column;
+    }
+    .mainInfo{
+        text-align: center;
+    }
+    .settingsBtn{
+        order: 0 !important;
+        align-self: flex-end !important;
+    }
 }

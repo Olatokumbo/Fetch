@@ -22,6 +22,9 @@ const Profile = () => {
   return (
     <div className={style.profile}>
       <div className={style.info}>
+        <IconButton className={style.settingsBtn}>
+          <SettingsIcon />
+        </IconButton>
         <div className={style.infoLeft}>
           <img src={Photo} className={style.avatar} alt="profile" />
         </div>
@@ -41,36 +44,33 @@ const Profile = () => {
             </CardContent>
           </Card>
         </div>
-        <IconButton className={style.settingsBtn}>
-          <SettingsIcon />
-        </IconButton>
       </div>
       <div className={style.account}>
         <div className={style.accountLeft}>
           <ul>
             <li>
               <Link to="#">
-                <Typography>Menu 1</Typography>
+                <Typography>Recent Orders</Typography>
               </Link>
             </li>
             <li>
               <Link to="#">
-                <Typography>Menu 1</Typography>
+                <Typography>To Receive</Typography>
               </Link>
             </li>
             <li>
               <Link to="#">
-                <Typography>Menu 1</Typography>
+                <Typography>Transaction History</Typography>
               </Link>
             </li>
             <li>
               <Link to="#">
-                <Typography>Menu 1</Typography>
+                <Typography>My Reviews</Typography>
               </Link>
             </li>
             <li>
               <Link to="#">
-                <Typography>Menu 1</Typography>
+                <Typography>Cancelled</Typography>
               </Link>
             </li>
           </ul>

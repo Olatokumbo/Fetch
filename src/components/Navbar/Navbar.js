@@ -57,6 +57,7 @@ const Navbar = () => {
             open={Boolean(anchorEl)}
             onClose={handleClose}
           >
+            <MenuItem onClick={() => {history.push('/profile')}}>My Profile</MenuItem>
             <MenuItem onClick={() => {history.push('/signin')}}>Sign in</MenuItem>
             <MenuItem onClick={() => history.push('/signup')}>Sign up</MenuItem>
             <Divider />
