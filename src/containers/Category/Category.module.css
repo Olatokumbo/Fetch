@@ -1,0 +1,11 @@
+.category{
+    padding: 2rem;
+    margin-top: 0.5rem;
+    background-color: white !important;
+}
+
+.title{
+    font-size: x-large!important;
+    margin-bottom: 1rem !important;
+    font-weight: bold !important;
+}

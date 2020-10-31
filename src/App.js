@@ -6,6 +6,7 @@ import Signup from "./pages/Signup/Signup";
 import Profile from "./pages/Profile/Profile";
 import Search from "./pages/Search/Search";
 import Join from "./pages/Join/Join";
+import Store from "./pages/Store/Store";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import "./App.css";
 const App = () => {
@@ -20,6 +21,7 @@ const App = () => {
           <Route path="/profile" component={Profile} />
           <Route path="/search" component={Search} />
           <Route path="/join" component={Join} />
+          <Route path="/store" component={Store} />
         </Switch>
       </Router>
       <Footer />
