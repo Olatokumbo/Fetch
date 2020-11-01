@@ -49,7 +49,7 @@ const Store = () => {
           <Typography className={style.total}>Total</Typography>
           <Typography>PHP 0.00</Typography>
         </div>
-        <Button color="secondary" variant="contained" className={style.checkoutBtn}>Go to checkout</Button>
+        <Button disabled color="secondary" variant="contained" className={style.checkoutBtn}>Go to checkout</Button>
       </div>
     </div>
   );

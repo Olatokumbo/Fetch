@@ -46,6 +46,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: sticky;
+    top: 64px;
+    height: 100vh;
 }
 
 .price{

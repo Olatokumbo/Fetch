@@ -1,6 +1,6 @@
 .category{
     padding: 2rem;
-    margin-top: 0.5rem;
+    margin-top: 1rem;
     background-color: white !important;
 }
 
@@ -8,4 +8,10 @@
     font-size: x-large!important;
     margin-bottom: 1rem !important;
     font-weight: bold !important;
+}
+
+.list{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+
 }

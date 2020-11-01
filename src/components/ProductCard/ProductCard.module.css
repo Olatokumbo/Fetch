@@ -1,0 +1,30 @@
+.productCard{
+    display: flex;
+    margin: 1rem;
+    padding: 0.8rem;
+    align-items: center;
+    -webkit-box-shadow: 0 2px 8px 0 rgba(0,0,0,0.08);
+    -moz-box-shadow: 0 2px 8px 0 rgba(0,0,0,0.08);
+    box-shadow: 0 2px 8px 0 rgba(0,0,0,0.08);
+    width: fit-content;
+}
+
+.left{
+    display: flex;
+    flex-direction: column;
+}
+
+.name{
+    font-weight: bold !important;
+    margin-bottom: 3px !important;
+}
+.info{
+    font-size: small !important;
+    color: gray !important;
+    width: 90% !important;
+}
+
+.image{
+    width: 5rem;
+    height: auto;
+}
