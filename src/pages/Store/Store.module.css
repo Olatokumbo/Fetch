@@ -9,14 +9,17 @@
     flex: 3
 }
 .info{
-    padding: 1rem 2rem;
+    /* padding: 0rem 1rem; */
 }
 .coverImage{
     height: 16rem;
     width: 100%;
     object-fit: cover;
 }
-
+.header{
+    background-color: white;
+    padding: 1rem 1rem 0 1rem;
+}
 .storeInfo{
     padding: 0.5rem 0;
     display: flex;
@@ -35,6 +38,7 @@
 }
 .categories{
     padding: 1rem 0 ;
+    overflow-x: auto;
 }
 
 .storeRight{
@@ -51,6 +55,9 @@
     height: 100vh;
 }
 
+.cartTitle{
+    font-weight: bold !important;
+}
 .price{
     display: flex;
     justify-content: space-between;

@@ -1,6 +1,6 @@
 import React from "react";
 import { Typography, Card, CardContent, CardMedia } from "@material-ui/core";
-import Photo from "../../assets/wallpaper.jpg";
+import Photo from "../../assets/sm.jpg";
 import style from "./InfoCard.module.css";
 const InfoCard = () => {
   return (
@@ -8,6 +8,7 @@ const InfoCard = () => {
       <CardMedia
         component="img"
         src={Photo}
+        className={style.photo}
       />
       <CardContent className={style.cardContent}>
       <Typography className={style.title}>SM Supermarket (San Pablo City)</Typography>

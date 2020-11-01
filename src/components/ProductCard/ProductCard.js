@@ -11,7 +11,7 @@ const ProductCard = () => {
         <Typography className={style.info} component="p">
           EDEN Cheddar Cheese Eden is a processed filled cheese food
         </Typography>
-        <Typography className={style.price}>PHP 160.0</Typography>
+        <Typography className={style.price}>PHP 160.00</Typography>
       </div>
       <div className={style.right}>
         <img className={style.image} src={Eden} alt="cheese" />

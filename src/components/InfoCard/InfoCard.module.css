@@ -10,6 +10,10 @@
 .card:hover{
     cursor: pointer;
 }
+
+.photo{
+    min-height: 10.5rem !important;
+}
 .cardContent{
     padding: 1rem !important;
 }
