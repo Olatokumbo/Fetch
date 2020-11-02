@@ -3,6 +3,7 @@ import Image from "../../assets/sm.jpg";
 import { Typography, Button, ButtonGroup } from "@material-ui/core";
 import { Rating } from "@material-ui/lab";
 import Category from "../../containers/Category/Category";
+import CartItem from "../../components/CartItem/CartItem";
 import style from "./Store.module.css";
 const Store = () => {
   return (
@@ -49,6 +50,12 @@ const Store = () => {
         <Typography color="textSecondary" variant="body2">
           Start adding items to your cart
         </Typography>
+        <div className={style.cartContainer}>
+        <CartItem />
+        <CartItem />
+        <CartItem />
+        <CartItem />
+        </div>
         <div className={style.price}>
           <Typography className={style.total}>Total</Typography>
           <Typography>PHP 0.00</Typography>

@@ -2,18 +2,21 @@
     /* margin: 9rem !important; */
     font-size: 2rem !important;
     font-weight: 600 !important;
-    color: rgb(255, 255, 255) !important;
+    color: rgb(61, 61, 61) !important;
     width: auto;
 }
 .subtitle{
     font-size: 11px !important;
-    color: white;
+    color: rgb(94, 94, 94);
     margin-bottom: 1rem !important;
     width: 20rem;
+    background-color: white;
+    padding: 0.5rem !important;
+    border-radius: 10px;
 }
 .header{
     /* height: 90vh; */
-    background: url("../../assets/forest.jpg");
+    background: linear-gradient(rgba(177, 177, 177, 0.247), rgba(231, 231, 231, 0.253)), url("../../assets/food.jpg");
     background-position: center;
     background-size: cover;
     padding: 3rem;
@@ -115,7 +118,7 @@
     }
     .tagLine{
         font-size: 1.5rem !important;
-        font-weight: lighter !important;
+        font-weight: 300 !important;
         text-align: center;
     }
     .btn{
