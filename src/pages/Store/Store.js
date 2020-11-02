@@ -2,6 +2,7 @@ import React from "react";
 import Image from "../../assets/sm.jpg";
 import { Typography, Button, ButtonGroup } from "@material-ui/core";
 import { Rating } from "@material-ui/lab";
+import ShoppingCartIcon from "@material-ui/icons/ShoppingCart";
 import Category from "../../containers/Category/Category";
 import CartItem from "../../components/CartItem/CartItem";
 import style from "./Store.module.css";
@@ -51,10 +52,10 @@ const Store = () => {
           Start adding items to your cart
         </Typography>
         <div className={style.cartContainer}>
-        <CartItem />
-        <CartItem />
-        <CartItem />
-        <CartItem />
+          <CartItem />
+          <CartItem />
+          <CartItem />
+          <CartItem />
         </div>
         <div className={style.price}>
           <Typography className={style.total}>Total</Typography>
@@ -68,6 +69,13 @@ const Store = () => {
         >
           Go to checkout
         </Button>
+      </div>
+      <div className={style.stickyCart}>
+        <div className={style.stickyCartContainer}>
+          <ShoppingCartIcon />
+          <Typography>View Cart</Typography>
+          <Typography>PHP 0.00</Typography>
+        </div>
       </div>
     </div>
   );
