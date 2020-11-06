@@ -19,7 +19,7 @@
 .container{
     width: 100%;
     max-width: 416px;
-    margin: auto;
+    margin: 1rem auto;
     padding: 1rem;
     border-radius: 10px;
     border: 1px solid #cfcfcf;

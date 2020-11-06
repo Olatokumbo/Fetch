@@ -13,6 +13,11 @@ var firebaseConfig = {
     appId: "1:49956656706:web:684af07ad29c42f3e4bfdb",
     measurementId: "G-2WMFSCP8JG"
   };
+  // Google Provider
+  const provider = new firebase.auth.GoogleAuthProvider();
+provider.setCustomParameters({
+  prompt: 'select_account'
+});
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
   const firestore = firebase.firestore();
