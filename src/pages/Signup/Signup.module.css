@@ -1,5 +1,5 @@
 .signup{
-    height: 100vh;
+    height: 100%;
     display: flex;
 }
 .signupLeft{
@@ -49,13 +49,40 @@
 .name{
     display: flex;
 }
+.flag{
+    width: 1.5rem;
+    height: auto;
+    border-radius: 2px;
+    margin: 0.2rem;
+}
+.phone{
+    display: flex;
+    align-items: center;
+}
+
+.code{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: lavender;
+    margin-right: 0.4rem;
+    height: 100%;
+    padding: 0.63rem 0.2rem;
+    border-radius: 4px;
+}
+
+.code p{
+    font-size: small !important;
+}
 .input:first-child{
     margin-top: 0.5rem !important;
     margin-bottom: 0.5rem !important;
     margin-right: 1rem !important;
+    width: 100% !important;
 }
 .input:not(:first-child){
     margin: 0.5rem 0 !important;
+    width: 100% !important;
 }
 .submit{
     /* width: fit-content !important; */
