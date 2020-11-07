@@ -39,6 +39,7 @@
     background-color: #4285f4 !important;
     border-radius: 8px !important;
     margin: 1rem 0 !important;
+    padding: 0.5rem !important;
 }
 .signinRight form{
     display: flex;

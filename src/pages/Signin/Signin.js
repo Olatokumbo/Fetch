@@ -30,6 +30,7 @@ const Signin = () => {
               variant="outlined"
               size="small"
               required
+              value={email}
               onChange={(e)=>setEmail(e.target.value)}
             />
             <TextField
@@ -39,6 +40,7 @@ const Signin = () => {
               variant="outlined"
               size="small"
               required
+              value={password}
               onChange={(e)=>setPassword(e.target.value)}
             />
             <Button

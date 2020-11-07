@@ -47,6 +47,9 @@ const Signup = () => {
                 type="text"
                 variant="outlined"
                 size="small"
+                required
+                value={fname}
+                onChange={(e)=>setFname(e.target.value)}
               />
               <TextField
                 className={style.input}
@@ -54,6 +57,9 @@ const Signup = () => {
                 type="text"
                 variant="outlined"
                 size="small"
+                required
+                value={lname}
+                onChange={(e)=>setLname(e.target.value)}
               />
             </div>
             <TextField
@@ -62,22 +68,25 @@ const Signup = () => {
               type="email"
               variant="outlined"
               size="small"
+              required
+              value={email}
+              onChange={(e)=>setEmail(e.target.value)}
             />
             <div className={style.phone}>
               <div className={style.code}>
-                <img
-                  className={style.flag}
-                  src={countryData?.flag}
-                  alt=""
-                />
+                <img className={style.flag} src={countryData?.flag} alt="nn" />
                 <Typography>{countryData.callingCodes? ("+" + countryData.callingCodes[0]): ""}</Typography>
               </div>
               <TextField
                 className={style.input}
                 label="Phone Number"
-                type="text"
+                type="number"
                 variant="outlined"
-                size="small"
+                size="small" 
+                inputProps={{ maxLength: 10 }}
+                required              
+                value={number}
+                onChange={(e)=>setNumber(e.target.value)}
               />
             </div>
             <TextField
@@ -86,6 +95,9 @@ const Signup = () => {
               type="password"
               variant="outlined"
               size="small"
+              required
+              value={password}
+              onChange={(e)=>setPassword(e.target.value)}
             />
             <Button
               className={style.submit}
@@ -98,7 +110,6 @@ const Signup = () => {
             <Typography variant="body2" align="center">
               Already have an Account?
               <Link to="/signin" style={{ textDecoration: "none" }}>
-                {" "}
                 Sign In
               </Link>
             </Typography>
