@@ -50,6 +50,11 @@
 .input{
     margin: 0.5rem 0 !important;
 }
+.signin .error{
+    color: red !important;
+    font-size: 0.8rem !important;
+    margin: auto !important;
+}
 .submit{
     /* width: fit-content !important; */
     margin: 0.8rem 0 !important;

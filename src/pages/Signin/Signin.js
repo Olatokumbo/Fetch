@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { connect } from "react-redux";
 import * as actionCreators from "../../store/actions"
 import style from "./Signin.module.css";
-const Signin = () => {
+const Signin = ({error}) => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   return (
@@ -53,6 +53,7 @@ const Signin = () => {
             >
               Submit
             </Button>
+            <Typography className={style.error}>{error}</Typography>
             <Typography variant="body2" align="center">
               Don't have an Account?
               <Link to="/signup" style={{ textDecoration: "none" }}>
@@ -66,10 +67,15 @@ const Signin = () => {
   );
 };
 
+const mapStateToProps = (state) =>{
+  return{
+    error: state.auth.error
+  }
+}
 
 const mapDisptachToProps = (dispatch) =>{
   return {
     signin: (credentials)=> dispatch(actionCreators.startSignin(credentials))
   }
 }
-export default connect(null, mapDisptachToProps)(Signin);
+export default connect(mapStateToProps, mapDisptachToProps)(Signin);

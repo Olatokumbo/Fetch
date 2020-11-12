@@ -115,6 +115,7 @@ const Signup = ({error, signin}) => {
             >
               Create an Account
             </Button>
+            <Typography className={style.error}>{error}</Typography>
             <Typography variant="body2" align="center">
               Already have an Account?
               <Link to="/signin" style={{ textDecoration: "none" }}>

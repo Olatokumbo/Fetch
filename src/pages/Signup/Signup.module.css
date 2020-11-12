@@ -75,6 +75,12 @@
 .code p{
     font-size: small !important;
 }
+
+.signup .error{
+    color: red !important;
+    font-size: 0.8rem !important;
+    margin: auto !important;
+}
 .input:first-child{
     margin-top: 0.5rem !important;
     margin-bottom: 0.5rem !important;
