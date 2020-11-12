@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { Typography, Button, TextField } from "@material-ui/core";
 import { Link } from "react-router-dom";
+import { connect } from "react-redux";
+import * as actionCreators from "../../store/actions"
 import style from "./Signin.module.css";
 const Signin = () => {
   const [email, setEmail] = useState("");
@@ -16,7 +18,7 @@ const Signin = () => {
           <Typography className={style.signinText} align="center">
             Sign in to Fetch
           </Typography>
-          <Button className={style.googleBtn} variant="contained">
+          <Button className={style.googleBtn} variant="contained" disabled>
             Sign in with Google
           </Button>
           <Typography color="textSecondary" variant="body2" align="center">
@@ -64,4 +66,10 @@ const Signin = () => {
   );
 };
 
-export default Signin;
+
+const mapDisptachToProps = (dispatch) =>{
+  return {
+    signin: (credentials)=> dispatch(actionCreators.startSignin(credentials))
+  }
+}
+export default connect(null, mapDisptachToProps)(Signin);

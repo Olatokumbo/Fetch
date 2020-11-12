@@ -2,8 +2,10 @@ import React, { useState, useEffect } from "react";
 import { Typography, Button, TextField } from "@material-ui/core";
 import { Link } from "react-router-dom";
 import axios from "axios";
+import { connect } from "react-redux";
+import * as actionCreators from "../../store/actions"
 import style from "./Signup.module.css";
-const Signup = () => {
+const Signup = ({error, signin}) => {
   const [fname, setFname] = useState("");
   const [lname, setLname] = useState("");
   const [email, setEmail] = useState("");
@@ -22,6 +24,12 @@ const Signup = () => {
     };
     getCountryData();
   }, []);
+  const submit = () =>{
+   if(fname && lname && email && password && number){
+    console.log("signup");
+    signin({fname, lname, email, password, number})
+   }
+  }
   return (
     <div className={style.signup}>
       <div className={style.signupLeft}></div>
@@ -33,13 +41,13 @@ const Signup = () => {
           <Typography className={style.signupText} align="center">
             Sign up to Fetch
           </Typography>
-          <Button className={style.googleBtn} variant="contained">
+          <Button className={style.googleBtn} variant="contained" disabled>
             Sign up with Google
           </Button>
           <Typography color="textSecondary" variant="body2" align="center">
             Or
           </Typography>
-          <form>
+          <form onSubmit={submit}>
             <div className={style.name}>
               <TextField
                 className={style.input}
@@ -120,4 +128,15 @@ const Signup = () => {
   );
 };
 
-export default Signup;
+const mapStateToProps = (state) =>{
+  return{
+    error: state.auth.error
+  }
+}
+
+const mapDisptachToProps = (dispatch) =>{
+  return {
+    signin: (credentials)=> dispatch(actionCreators.startSignin(credentials))
+  }
+}
+export default connect(mapStateToProps, mapDisptachToProps)(Signup);
