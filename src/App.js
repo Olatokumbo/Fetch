@@ -7,6 +7,7 @@ import Profile from "./pages/Profile/Profile";
 import Search from "./pages/Search/Search";
 import Join from "./pages/Join/Join";
 import Store from "./pages/Store/Store";
+import Location from "./pages/Location/Location";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import "./App.css";
 const App = () => {
@@ -22,6 +23,7 @@ const App = () => {
           <Route path="/search" component={Search} />
           <Route path="/join" component={Join} />
           <Route path="/store" component={Store} />
+          <Route path="/location" component={Location} />
         </Switch>
       </Router>
       <Footer />

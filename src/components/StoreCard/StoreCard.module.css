@@ -1,0 +1,30 @@
+.storeCard{
+    margin: 1rem;
+}
+.img{
+    border-radius: 5px;
+    padding: 1rem;
+    background: url("../../assets/foods.jpg");
+    width: 18rem;
+    height: 14rem;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 0.5rem;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+}
+.title{
+    font-weight: bold !important;
+}
+
+.rating{
+    font-size: smaller !important;
+}
+.info{
+    font-weight: lighter !important;
+    color: rgb(136, 136, 136) !important;
+    font-size: small !important;
+}
