@@ -12,6 +12,14 @@
     margin-bottom: 0.5rem;
 }
 
+.img:hover{
+    transition: 1s;
+    transform: scale(1.05);
+}
+.ratingContainer{
+    display: flex;
+    align-items: center;
+}
 .header{
     display: flex;
     justify-content: space-between;
