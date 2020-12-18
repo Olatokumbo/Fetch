@@ -2,15 +2,51 @@
     border-radius: 3px;
     width: 12rem;
     height: 15rem;
-    background: url("../../assets/Manila.jpeg");
-    background-size: cover;
     margin: 0.5rem;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+}
+/* .cityCardHolder{
+    width: 12rem;
+    height: 15rem;
     display: flex;
     padding: 0.5rem;
+    transition: all 1s;
 }
 
+.cityCardHolder:hover{
+    transform: scale(1.12);
+} */
+
+.picture{
+    height: 100%;
+    transition: all 0.7s;
+}
+.picture:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}
+.cityInfo{
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 0.5rem;
+    margin: 0.5rem;
+    bottom: 0px;
+    z-index: 2;
+}
+.cityInfo .btn{
+    color: white;
+    opacity: 0;
+}
+.picture:hover .cityInfo .btn{
+    opacity: 1;
+
+}
 .cityName{
-    color: white !important;
+    color: rgb(255, 255, 255) !important;
     font-size: x-large !important;
     font-weight: bold !important;
     align-self: flex-end !important;
