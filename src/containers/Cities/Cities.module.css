@@ -1,0 +1,46 @@
+.cities{
+    padding: 0.5rem;
+}
+
+.wrapper{
+    display: flex;
+    justify-content:center;
+}
+.cityGrid{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: auto;
+    width: 78rem;
+    margin: auto;
+    align-content: flex-start;
+}
+
+@media only screen and (max-width: 1275px){
+    .cityGrid{
+        width: 65rem;
+    }
+}
+
+@media only screen and (max-width: 1056px){
+    .cityGrid{
+        width: 52rem;
+    }
+}
+
+@media only screen and (max-width: 855px){
+    .cityGrid{
+        width: 39rem;
+    }
+}
+@media only screen and (max-width: 640px){
+    .cityGrid{
+        width: 26rem;
+    }
+}
+
+@media only screen and (max-width: 430px){
+    .cityGrid{
+        width: 13rem;
+    }
+}

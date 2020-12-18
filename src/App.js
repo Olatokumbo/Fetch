@@ -9,6 +9,7 @@ import Join from "./pages/Join/Join";
 import Store from "./pages/Store/Store";
 import Location from "./pages/Location/Location";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { geolocated } from "react-geolocated";
 import "./App.css";
 const App = () => {
   return (
@@ -31,4 +32,9 @@ const App = () => {
   );
 };
 
-export default App;
+export default geolocated({
+  positionOptions: {
+    enableHighAccuracy: true,
+  },
+  userDecisionTimeout: 5000,
+})(App);

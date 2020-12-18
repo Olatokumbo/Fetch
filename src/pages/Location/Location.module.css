@@ -16,6 +16,11 @@
     max-width: 50%;
 }
 
+.location span{
+    color: rgb(39, 39, 39);
+    font-weight: 600;
+}
+
 .location .slogan{
     color: rgb(158, 158, 158);
 }

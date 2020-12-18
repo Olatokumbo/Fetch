@@ -1,6 +1,7 @@
 import React from "react";
 import { Typography, Button } from "@material-ui/core";
 import { InfoCard} from "../../components";
+import Cities from "../../containers/Cities/Cities";
 import Phone from "../../assets/phone.png";
 import style from "./Home.module.css";
 const Home = () => {
@@ -27,6 +28,7 @@ const Home = () => {
         <InfoCard />
         <InfoCard />
       </div>
+      <Cities/>
       <div className={style.matter}>
         <div className={style.matterLeft}>
           <Typography>

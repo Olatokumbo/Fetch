@@ -1,0 +1,17 @@
+.cityCard{
+    border-radius: 3px;
+    width: 12rem;
+    height: 15rem;
+    background: url("../../assets/Manila.jpeg");
+    background-size: cover;
+    margin: 0.5rem;
+    display: flex;
+    padding: 0.5rem;
+}
+
+.cityName{
+    color: white !important;
+    font-size: x-large !important;
+    font-weight: bold !important;
+    align-self: flex-end !important;
+}

@@ -9,7 +9,7 @@ const Location = () => {
       <div className={style.header}>
         <Typography className={style.title} gutterBottom>
           Find food and groceries delivered to you from Shops and Restaurants
-          within San Pablo City
+          within <span>San Pablo City</span>
         </Typography>
         <Typography className={style.slogan}>
             Have your food delivered to you at the convenience of your home
