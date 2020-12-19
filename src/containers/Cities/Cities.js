@@ -6,7 +6,7 @@ import style from "./Cities.module.css";
 const Cities = () =>{
     return(
         <div className={style.cities}>
-            <Typography>Check out some our affiliated with these Cities</Typography>
+            <Typography className={style.title}>Check out some our affiliated stores with these Cities</Typography>
             <div className={style.wrapper}>
             <div className={style.cityGrid}>
                 <CityCard/>
