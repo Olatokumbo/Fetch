@@ -1,35 +1,84 @@
-.header{
-    background: url("../../assets/fruits.png");
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-    height: 20rem;
-    padding: 2rem;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
+.header {
+  background: url("../../assets/fruits.png");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 20rem;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
-.location .title{
-    color: rgb(82, 82, 82);
-    font-weight: 100 !important;
-    font-size: 1.3rem !important;
-    max-width: 50%;
-}
-
-.location span{
-    color: rgb(39, 39, 39);
-    font-weight: 600;
+.location .title {
+  color: rgb(82, 82, 82);
+  font-weight: 100 !important;
+  font-size: 1.3rem !important;
+  max-width: 50%;
 }
 
-.location .slogan{
-    color: rgb(158, 158, 158);
-}
-.storeList{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+.location span {
+  color: rgb(39, 39, 39);
+  font-weight: 600;
 }
 
-.container{
-    padding: 1rem;
+.location .slogan {
+  color: rgb(158, 158, 158);
 }
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+}
+.storeList {
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: center; */
+}
+
+.container {
+  padding: 1rem;
+}
+
+@media only screen and (max-width: 2266px) {
+  .storeList {
+    width: 120rem;
+    margin: auto;
+  }
+}
+
+@media only screen and (max-width: 1947px) {
+    .storeList {
+      width: 100rem;
+      margin: auto;
+    }
+  }
+
+  @media only screen and (max-width: 1627px) {
+    .storeList {
+      width: 80rem;
+      margin: auto;
+    }
+  }
+  @media only screen and (max-width: 1308px) {
+    .storeList {
+      width: 60rem;
+      margin: auto;
+    }
+  }
+
+  @media only screen and (max-width: 989px) {
+    .storeList {
+      width: 40rem;
+      margin: auto;
+    }
+  }
+  @media only screen and (max-width: 670px) {
+    .storeList {
+      width: 20rem;
+      margin: auto;
+    }
+    .location .title {
+        width: 100%;
+        max-width: unset;
+    }
+  }

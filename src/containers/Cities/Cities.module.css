@@ -34,24 +34,27 @@
     }
 }
 
-@media only screen and (max-width: 1056px){
+@media only screen and (max-width: 1085px){
     .cityGrid{
         width: 52rem;
     }
 }
 
-@media only screen and (max-width: 855px){
+@media only screen and (max-width: 877px){
     .cityGrid{
         width: 39rem;
     }
 }
-@media only screen and (max-width: 640px){
+@media only screen and (max-width: 651px){
     .cityGrid{
         width: 26rem;
     }
+    .title{
+        font-size: 1.3rem !important;
+    }
 }
 
-@media only screen and (max-width: 430px){
+@media only screen and (max-width: 439px){
     .cityGrid{
         width: 13rem;
     }

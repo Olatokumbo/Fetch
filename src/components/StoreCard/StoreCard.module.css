@@ -4,11 +4,8 @@
 .img{
     border-radius: 5px;
     padding: 1rem;
-    background: url("../../assets/foods.jpg");
     width: 18rem;
     height: 14rem;
-    background-size: cover;
-    background-position: center;
     margin-bottom: 0.5rem;
 }
 

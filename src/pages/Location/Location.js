@@ -1,6 +1,7 @@
 import { Typography } from "@material-ui/core";
 import React from "react";
 import StoreCard from "../../components/StoreCard/StoreCard";
+import InfoCard from "../../components/InfoCard/InfoCard";
 import style from "./Location.module.css";
 
 const Location = () => {
@@ -12,19 +13,21 @@ const Location = () => {
           within <span>San Pablo City</span>
         </Typography>
         <Typography className={style.slogan}>
-            Have your food delivered to you at the convenience of your home
+          Have your food delivered to you at the convenience of your home
         </Typography>
       </div>
       <div className={style.container}>
         <Typography variant="h5">Popular Stores</Typography>
-        <div className={style.storeList}>
-          <StoreCard />
-          <StoreCard />
-          <StoreCard />
-          <StoreCard />
-          <StoreCard />
-          <StoreCard />
-          <StoreCard />
+        <div className={style.wrapper}>
+          <div className={style.storeList}>
+            <InfoCard />
+            <InfoCard />
+            <InfoCard />
+            <InfoCard />
+            <InfoCard />
+            <InfoCard />
+            <InfoCard />
+          </div>
         </div>
       </div>
     </div>

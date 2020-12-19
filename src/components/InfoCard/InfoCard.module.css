@@ -1,11 +1,12 @@
 .card{
     width: fit-content !important;
-    border-radius: 10px !important;
-    max-width: 345px !important;
+    border-radius: 5px !important;
+    max-width: 300px !important;
     min-width: 254px !important;
     /* margin: 0.5rem !important; */
     height: fit-content !important;
     justify-self: center;
+    margin: 0.6rem;
 }
 .card:hover{
     cursor: pointer;
@@ -24,4 +25,16 @@
     color: gray !important;
     font-weight: lighter !important;
     font-size: 0.8rem !important;
+}
+.ratingContainer{
+    display: flex;
+    align-items: center;
+}
+.rating{
+    font-size: smaller !important;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
 }
