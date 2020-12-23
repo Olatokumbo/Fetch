@@ -8,4 +8,7 @@ export const SIGNOUT= "SIGNOUT";
 // Cities
 export const LIST_CITIES = "LIST_CITIES";
 
+// Stores
+export const LIST_STORES = "LIST_STORES";
+
 

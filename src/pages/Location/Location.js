@@ -1,10 +1,11 @@
 import { Typography } from "@material-ui/core";
-import React from "react";
-import StoreCard from "../../components/StoreCard/StoreCard";
+import React, {useEffect} from "react";
+// import StoreCard from "../../components/StoreCard/StoreCard";
 import InfoCard from "../../components/InfoCard/InfoCard";
+import { connect } from "react-redux";
 import style from "./Location.module.css";
 
-const Location = () => {
+const Location = ({match:{params:{cityId}}}) => {
   return (
     <div className={style.location}>
       <div className={style.header}>

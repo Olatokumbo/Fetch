@@ -24,7 +24,7 @@ const App = () => {
           <Route path="/search" component={Search} />
           <Route path="/join" component={Join} />
           <Route path="/store" component={Store} />
-          <Route path="/location" component={Location} />
+          <Route path="/city/:cityId" component={Location} />
         </Switch>
       </Router>
       <Footer />

@@ -3,16 +3,21 @@ const initialState = {
     cities: []
 }
 
-const cityReducer = (state = initialState, action) =>{
+const cityReducer = (state = initialState, action) => {
     switch (action.type) {
         case actionTypes.LIST_CITIES:
-            return{
+            return {
                 ...state,
                 cities: action.cities
+            }
+        case actionTypes.LIST_STORES:
+            return {
+                ...state,
+                cities: action.stores
             }
         default:
             return state
     }
-} 
+}
 
 export default cityReducer;
