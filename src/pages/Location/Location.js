@@ -3,15 +3,20 @@ import React, {useEffect} from "react";
 // import StoreCard from "../../components/StoreCard/StoreCard";
 import InfoCard from "../../components/InfoCard/InfoCard";
 import { connect } from "react-redux";
+import * as actionCreator from "../../store/actions";
 import style from "./Location.module.css";
 
-const Location = ({match:{params:{cityId}}}) => {
+const Location = ({getStores, stores, cityName, match:{params:{cityId}}}) => {
+  useEffect(()=>{
+    window.scrollTo(0, 0);
+    getStores(cityId);
+  }, [getStores, cityId])
   return (
     <div className={style.location}>
       <div className={style.header}>
         <Typography className={style.title} gutterBottom>
           Find food and groceries delivered to you from Shops and Restaurants
-          within <span>San Pablo City</span>
+          within <span>{cityName}</span>
         </Typography>
         <Typography className={style.slogan}>
           Have your food delivered to you at the convenience of your home
@@ -21,13 +26,7 @@ const Location = ({match:{params:{cityId}}}) => {
         <Typography variant="h5">Popular Stores</Typography>
         <div className={style.wrapper}>
           <div className={style.storeList}>
-            <InfoCard />
-            <InfoCard />
-            <InfoCard />
-            <InfoCard />
-            <InfoCard />
-            <InfoCard />
-            <InfoCard />
+            { stores.map((data)=><InfoCard key ={data.id} data={data}/>)}
           </div>
         </div>
       </div>
@@ -35,4 +34,19 @@ const Location = ({match:{params:{cityId}}}) => {
   );
 };
 
-export default Location;
+const mapStateToProps = (state) => {
+  return {
+    stores: state.store.stores,
+    cityName: state.store.cityName
+  };
+};
+
+const mapDispatchToProps = (dispatch) => {
+  return {
+    getStores: (cityId) => dispatch(actionCreator.listStores(cityId)),
+  };
+};
+
+
+
+export default connect(mapStateToProps, mapDispatchToProps)(Location);

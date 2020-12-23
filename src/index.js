@@ -4,13 +4,14 @@ import {createStore, applyMiddleware, combineReducers, compose} from "redux";
 import {Provider} from "react-redux"
 import thunk from "redux-thunk"; 
 import {auth} from "./firebase/firebase";
-import {authReducer, cityReducer} from "./store/reducers";
+import {authReducer, cityReducer, storeReducer} from "./store/reducers";
 import App from "./App";
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 
 const rootReducer = combineReducers({
     auth: authReducer,
-    city: cityReducer
+    city: cityReducer,
+    store: storeReducer
 })
 const store = createStore(
     rootReducer,

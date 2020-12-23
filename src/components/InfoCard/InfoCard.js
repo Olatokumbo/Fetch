@@ -3,18 +3,18 @@ import { Typography, Card, CardContent, CardMedia } from "@material-ui/core";
 import Photo from "../../assets/sm.jpg";
 import StarBorderIcon from '@material-ui/icons/StarBorder';
 import style from "./InfoCard.module.css";
-const InfoCard = () => {
+const InfoCard = ({data}) => {
   return (
     <Card className={style.card}>
-      <CardMedia component="img" src={Photo} className={style.photo} />
+      <CardMedia component="img" src={data.imageUrl} className={style.photo} />
       <CardContent className={style.cardContent}>
         <div className={style.header}>
           <Typography className={style.title}>
-            SM Supermarket (San Pablo)
+            {data.name}
           </Typography>
           <div className={style.ratingContainer}>
             <StarBorderIcon />
-            <Typography className={style.rating}>4/5</Typography>
+            <Typography className={style.rating}>{data.rating}/5</Typography>
           </div>
         </div>
         <Typography className={style.subtitle}>

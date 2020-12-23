@@ -18,22 +18,3 @@ export const listCities = () =>{
           });
     }
 }
-
-export const listStores = (cityId) =>{
-  let stores = [];
-  return (dispatch)=>{
-    firestore
-    .collection("stores")
-    .where("id", "==", cityId)
-    .get()
-    .then((querySnapshot) => {
-      querySnapshot.forEach((doc) => {
-        stores.push({ ...{ id: doc.id }, ...doc.data() });
-      });
-    })
-    .then(() => {
-      dispatch({ type: actionTypes.LIST_CITIES, stores });
-      stores = [];
-    });
-  }
-}

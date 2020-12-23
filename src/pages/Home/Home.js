@@ -23,10 +23,10 @@ const Home = () => {
         </div>
       </div>
       <div className={style.cardSection}>
+        {/* <InfoCard />
         <InfoCard />
         <InfoCard />
-        <InfoCard />
-        <InfoCard />
+        <InfoCard /> */}
       </div>
       <Cities/>
       <div className={style.matter}>
