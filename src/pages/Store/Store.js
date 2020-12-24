@@ -1,28 +1,33 @@
-import React from "react";
-import Image from "../../assets/sm.jpg";
+import React, {useEffect} from "react";
 import { Typography, Button, ButtonGroup } from "@material-ui/core";
 import { Rating } from "@material-ui/lab";
 import ShoppingCartIcon from "@material-ui/icons/ShoppingCart";
 import Category from "../../containers/Category/Category";
 import CartItem from "../../components/CartItem/CartItem";
+import { connect } from "react-redux";
+import * as actionCreator from "../../store/actions";
 import style from "./Store.module.css";
-const Store = () => {
+const Store = ({storeInfo, getStoreInfo, match:{params:{storeId}}}) => {
+  useEffect(()=>{
+    window.scrollTo(0, 0);
+    getStoreInfo(storeId)
+  }, [getStoreInfo, storeId])
   return (
     <div className={style.store}>
       <div className={style.storeLeft}>
         <div className={style.cover}>
-          <img src={Image} alt="forest" className={style.coverImage} />
+          <img src={storeInfo.imageUrl} alt="forest" className={style.coverImage} />
         </div>
         <div className={style.info}>
           <div className={style.header}>
             <div className={style.storeInfo}>
               <Typography className={style.name}>
-                SM Supermarket (San Pablo City)
+               {`${storeInfo.name} ${storeInfo.city}`}
               </Typography>
               <Typography className={style.address}>
-                National Highway, San Pablo City, 4000 Laguna
+                {storeInfo.address}
               </Typography>
-              <Rating value={5} readOnly />
+              <Rating value={storeInfo.rating} readOnly />
             </div>
             <div className={style.categories}>
               <ButtonGroup
@@ -81,4 +86,18 @@ const Store = () => {
   );
 };
 
-export default Store;
+
+const mapStateToProps = (state) => {
+  return {
+    storeInfo: state.store.storeInfo,
+  };
+};
+
+const mapDispatchToProps = (dispatch) => {
+  return {
+    getStoreInfo: (storeId) => dispatch(actionCreator.fetchStoreInfo(storeId)),
+  };
+};
+
+
+export default connect (mapStateToProps, mapDispatchToProps)(Store);

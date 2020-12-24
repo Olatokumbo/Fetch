@@ -1,10 +1,11 @@
 import React from "react";
 import { Typography, Card, CardContent, CardMedia } from "@material-ui/core";
-import Photo from "../../assets/sm.jpg";
 import StarBorderIcon from '@material-ui/icons/StarBorder';
+import { Link } from "react-router-dom";
 import style from "./InfoCard.module.css";
 const InfoCard = ({data}) => {
   return (
+    <Link to={`/store/${data.id}`}>
     <Card className={style.card}>
       <CardMedia component="img" src={data.imageUrl} className={style.photo} />
       <CardContent className={style.cardContent}>
@@ -22,6 +23,7 @@ const InfoCard = ({data}) => {
         </Typography>
       </CardContent>
     </Card>
+    </Link>
   );
 };
 

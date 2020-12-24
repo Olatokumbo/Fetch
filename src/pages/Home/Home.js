@@ -1,6 +1,6 @@
 import React from "react";
 import { Typography, Button } from "@material-ui/core";
-import { InfoCard} from "../../components";
+// import { InfoCard} from "../../components";
 import Cities from "../../containers/Cities/Cities";
 import Phone from "../../assets/phone.png";
 import style from "./Home.module.css";

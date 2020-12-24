@@ -1,7 +1,8 @@
 import * as actionTypes from "../actions/actionTypes";
 const initialState = {
     stores: [],
-    cityName: ""
+    cityName: "",
+    storeInfo: []
 }
 
 const storeReducer = (state = initialState, action) => {
@@ -11,6 +12,11 @@ const storeReducer = (state = initialState, action) => {
                 ...state,
                 stores: action.stores,
                 cityName: action.cityName
+            }
+        case actionTypes.STORE_INFO:
+            return {
+                ...state,
+                storeInfo: action.storeInfo
             }
         default:
             return state

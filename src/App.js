@@ -23,7 +23,7 @@ const App = () => {
           <Route path="/profile" component={Profile} />
           <Route path="/search" component={Search} />
           <Route path="/join" component={Join} />
-          <Route path="/store" component={Store} />
+          <Route path="/store/:storeId" component={Store} />
           <Route path="/city/:cityId" component={Location} />
         </Switch>
       </Router>
