@@ -8,6 +8,7 @@ import Search from "./pages/Search/Search";
 import Join from "./pages/Join/Join";
 import Store from "./pages/Store/Store";
 import Location from "./pages/Location/Location";
+import Page404 from "./pages/Page404/Page404";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { geolocated } from "react-geolocated";
 import "./App.css";
@@ -25,6 +26,7 @@ const App = () => {
           <Route path="/join" component={Join} />
           <Route path="/store/:storeId" component={Store} />
           <Route path="/city/:cityId" component={Location} />
+          <Route component={Page404} />
         </Switch>
       </Router>
       <Footer />
